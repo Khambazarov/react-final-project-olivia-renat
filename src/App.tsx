@@ -1,7 +1,5 @@
 import { NavLink, Routes, Route, Outlet } from "react-router-dom";
 
-import { menuDe } from "./API/menuDe";
-import { menuEng } from "./API/menuEng";
 import { Home } from "./components/Home";
 import { Menu } from "./components/Menu";
 import { AboutUs } from "./components/AboutUs";

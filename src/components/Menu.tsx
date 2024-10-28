@@ -1,7 +1,15 @@
+// import { menuDe } from "../API/menuDe";
+import { menuEng } from "../API/menuEng";
+
 export function Menu() {
   return (
     <>
-      <h1>Menu</h1>
+      <ul>
+        {menuEng && (
+          <li>{[...new Set(menuEng.map((item) => item.category))]}</li>
+        )}
+        {/* {menuDe && menuDe.map(())} */}
+      </ul>
     </>
   );
 }
