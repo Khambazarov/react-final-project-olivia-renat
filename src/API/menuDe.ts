@@ -1,4 +1,4 @@
-type MenuDe = {
+export type MenuDe = {
   id: number;
   name: string;
   category: string;
@@ -6,6 +6,7 @@ type MenuDe = {
   description: string;
   availability: boolean;
   allergens: string[];
+  img: string;
 };
 
 export const menuDe: MenuDe[] = [
@@ -18,6 +19,7 @@ export const menuDe: MenuDe[] = [
       "Klassische italienische Pasta mit reichhaltiger Bolognese-Sauce",
     availability: true,
     allergens: ["gluten", "milch"],
+    img: "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ export const menuDe: MenuDe[] = [
     description: "Frischer Römersalat mit Caesar-Dressing und Croutons",
     availability: true,
     allergens: ["milch", "ei"],
+    img: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ export const menuDe: MenuDe[] = [
     description: "Reicher und saftiger Schokoladenkuchen",
     availability: true,
     allergens: ["gluten", "milch", "nüsse"],
+    img: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 4,
@@ -45,6 +49,7 @@ export const menuDe: MenuDe[] = [
     description: "Klassische Pizza mit Tomatensauce, Mozzarella und Basilikum",
     availability: true,
     allergens: ["gluten", "milch"],
+    img: "https://images.pexels.com/photos/19602378/pexels-photo-19602378/free-photo-of-sauerteigpizza-margherita-zeit.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 5,
@@ -54,6 +59,7 @@ export const menuDe: MenuDe[] = [
     description: "Perfekt gegrillter Lachs mit Zitronenbutter-Sauce",
     availability: true,
     allergens: ["fisch"],
+    img: "https://images.pexels.com/photos/2374946/pexels-photo-2374946.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 6,
@@ -64,6 +70,7 @@ export const menuDe: MenuDe[] = [
       "Pflanzenbasierter Patty mit Salat, Tomate und veganer Mayonnaise",
     availability: true,
     allergens: ["gluten"],
+    img: "https://images.pexels.com/photos/6546033/pexels-photo-6546033.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 7,
@@ -74,6 +81,7 @@ export const menuDe: MenuDe[] = [
       "Erfrischender Mango-Smoothie mit frischen Mangos und Mandelmilch",
     availability: true,
     allergens: ["nüsse"],
+    img: "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 8,
@@ -83,6 +91,7 @@ export const menuDe: MenuDe[] = [
     description: "Geröstetes Baguette mit Knoblauchbutter und Kräutern",
     availability: true,
     allergens: ["gluten", "milch"],
+    img: "https://images.pexels.com/photos/1460860/pexels-photo-1460860.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 9,
@@ -92,6 +101,7 @@ export const menuDe: MenuDe[] = [
     description: "Würzige Garnelen-Tacos mit frischer Salsa und cremiger Sauce",
     availability: true,
     allergens: ["schalentiere", "gluten"],
+    img: "https://images.pexels.com/photos/27365309/pexels-photo-27365309/free-photo-of-mexikanisches-restaurant.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 10,
@@ -101,6 +111,7 @@ export const menuDe: MenuDe[] = [
     description: "Cremiger Käsekuchen mit Keksboden",
     availability: true,
     allergens: ["milch", "gluten"],
+    img: "https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 11,
@@ -110,6 +121,7 @@ export const menuDe: MenuDe[] = [
     description: "Knusprig goldene Pommes Frites, leicht gesalzen",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 12,
@@ -119,6 +131,7 @@ export const menuDe: MenuDe[] = [
     description: "Würzige Hähnchenflügel mit Ranch-Dip",
     availability: true,
     allergens: ["milch"],
+    img: "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 13,
@@ -128,6 +141,7 @@ export const menuDe: MenuDe[] = [
     description: "Weiche Tacos mit gewürztem Rindfleisch, Käse und Salat",
     availability: true,
     allergens: ["gluten", "milch"],
+    img: "https://images.pexels.com/photos/7613555/pexels-photo-7613555.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 14,
@@ -137,6 +151,7 @@ export const menuDe: MenuDe[] = [
     description: "Penne mit cremiger Alfredo-Sauce und Parmesan",
     availability: true,
     allergens: ["gluten", "milch"],
+    img: "https://images.pexels.com/photos/29042359/pexels-photo-29042359/free-photo-of-kostliche-pesto-penne-nudeln-in-elegantem-ambiente.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 15,
@@ -146,6 +161,7 @@ export const menuDe: MenuDe[] = [
     description: "Salat mit Gurken, Tomaten, Oliven und Feta-Käse",
     availability: true,
     allergens: ["milch"],
+    img: "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 16,
@@ -155,6 +171,7 @@ export const menuDe: MenuDe[] = [
     description: "Frische saisonale Früchte in einer Schale serviert",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 17,
@@ -164,6 +181,7 @@ export const menuDe: MenuDe[] = [
     description: "Cremige Muschelsuppe mit Kartoffeln und Sellerie",
     availability: true,
     allergens: ["schalentiere", "milch"],
+    img: "https://images.pexels.com/photos/16357831/pexels-photo-16357831/free-photo-of-lebensmittel-essen-mahlzeit-schussel.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 18,
@@ -173,6 +191,7 @@ export const menuDe: MenuDe[] = [
     description: "Reicher und cremiger veganer Schokoladenpudding",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 19,
@@ -182,6 +201,7 @@ export const menuDe: MenuDe[] = [
     description: "Gekühlter Espresso mit Milch und Eis",
     availability: true,
     allergens: ["milch"],
+    img: "https://images.pexels.com/photos/29095101/pexels-photo-29095101/free-photo-of-eiskaffee-auf-holztisch-im-cafe-ambiente.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 20,
@@ -191,6 +211,7 @@ export const menuDe: MenuDe[] = [
     description: "Getoastetes Brot mit Avocado und einem Hauch Limette",
     availability: true,
     allergens: ["gluten"],
+    img: "https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 21,
@@ -200,6 +221,7 @@ export const menuDe: MenuDe[] = [
     description: "Erfrischendes Mineralwasser, still oder sprudelnd",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 22,
@@ -209,6 +231,7 @@ export const menuDe: MenuDe[] = [
     description: "Frisch gepresster Orangensaft",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 23,
@@ -218,6 +241,7 @@ export const menuDe: MenuDe[] = [
     description: "Heiße Tasse grüner Tee, aromatisch und wohltuend",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/3090274/pexels-photo-3090274.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 24,
@@ -227,6 +251,7 @@ export const menuDe: MenuDe[] = [
     description: "Edler Rotwein, perfekt zum Hauptgericht",
     availability: true,
     allergens: [],
+    img: "https://images.pexels.com/photos/95960/pexels-photo-95960.jpeg?auto=compress&cs=tinysrgb&w420&h=250&dpr=1",
   },
   {
     id: 25,
@@ -236,5 +261,6 @@ export const menuDe: MenuDe[] = [
     description: "Kühles Bier, frisch gezapft",
     availability: true,
     allergens: ["gluten"],
+    img: "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
 ];
