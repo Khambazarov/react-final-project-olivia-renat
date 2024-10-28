@@ -1,4 +1,4 @@
-type MenuEng = {
+export type MenuEng = {
   id: number;
   name: string;
   category: string;
@@ -6,6 +6,7 @@ type MenuEng = {
   description: string;
   availability: boolean;
   allergens: string[];
+  img?: string
 };
 
 export const menuEng: MenuEng[] = [
@@ -17,6 +18,7 @@ export const menuEng: MenuEng[] = [
     description: "Classic Italian pasta with rich bolognese sauce",
     availability: true,
     allergens: ["gluten", "dairy"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 2,
@@ -44,6 +46,7 @@ export const menuEng: MenuEng[] = [
     description: "Classic pizza with tomato sauce, mozzarella, and basil",
     availability: true,
     allergens: ["gluten", "dairy"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 5,
@@ -62,6 +65,7 @@ export const menuEng: MenuEng[] = [
     description: "Plant-based patty with lettuce, tomato, and vegan mayo",
     availability: true,
     allergens: ["gluten"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 7,
@@ -69,9 +73,10 @@ export const menuEng: MenuEng[] = [
     category: "Beverage",
     price: "4_99",
     description:
-      "Refreshing mango smoothie made with fresh mangoes and almond milk",
+    "Refreshing mango smoothie made with fresh mangoes and almond milk",
     availability: true,
     allergens: ["nuts"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 8,
@@ -90,6 +95,7 @@ export const menuEng: MenuEng[] = [
     description: "Spicy shrimp tacos with fresh salsa and creamy sauce",
     availability: true,
     allergens: ["shellfish", "gluten"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 10,
@@ -126,6 +132,7 @@ export const menuEng: MenuEng[] = [
     description: "Soft shell tacos with seasoned beef, cheese, and lettuce",
     availability: true,
     allergens: ["gluten", "dairy"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 14,
@@ -135,6 +142,7 @@ export const menuEng: MenuEng[] = [
     description: "Penne pasta in a creamy Alfredo sauce with Parmesan",
     availability: true,
     allergens: ["gluten", "dairy"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 15,
@@ -162,6 +170,7 @@ export const menuEng: MenuEng[] = [
     description: "Creamy clam chowder with potatoes and celery",
     availability: true,
     allergens: ["shellfish", "dairy"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 18,
@@ -234,5 +243,6 @@ export const menuEng: MenuEng[] = [
     description: "Chilled beer, freshly tapped",
     availability: true,
     allergens: ["gluten"],
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
 ];
