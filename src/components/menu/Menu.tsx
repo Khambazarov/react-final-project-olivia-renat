@@ -1,5 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { menuEng, MenuEng } from "../../API/menuEng";
+import { 
+  menuEng,
+  // MenuDe 
+} from "../../API/menuEng";
 
 export function Menu() {
   function menuPath(path: string) {
@@ -12,7 +15,7 @@ export function Menu() {
         </NavLink>
       ));
   }
-  
+
   return (
     <>
       {menuPath("main-course")}
