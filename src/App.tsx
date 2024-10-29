@@ -1,11 +1,10 @@
-import { NavLink, Routes, Route, Outlet } from "react-router-dom";
+import { NavLink, Routes, Route, Outlet, Navigate } from "react-router-dom";
 
 import { Home } from "./components/Home";
 import { Menu } from "./components/Menu";
 import { AboutUs } from "./components/AboutUs";
 import { FindUs } from "./components/FindUs";
 import { Contact } from "./components/Contact";
-import { NotFoundPage } from "./components/NotFoundPage";
 
 function App() {
   return (
@@ -37,7 +36,15 @@ function App() {
         <Route path="about-us" element={<AboutUs />} />
         <Route path="find-us" element={<FindUs />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NotFoundPage />} />
+
+        {/* catch not found pages ( menu/ | about-us/ | find-us/ | contact/ ) */}
+        <Route path="menu/*" element={<Navigate to="" />} />
+        <Route path="about-us/*" element={<Navigate to="" />} />
+        <Route path="find-us/*" element={<Navigate to="" />} />
+        <Route path="contact/*" element={<Navigate to="" />} />
+
+        {/* catch all other not found pages */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );

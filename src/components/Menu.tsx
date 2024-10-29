@@ -1,32 +1,79 @@
-// import { menuDe } from "../API/menuDe";
 import { menuEng, MenuEng } from "../API/menuEng";
-import { useState } from "react";
+import { useReducer, useState } from "react";
+
+type State = {
+  selectedCategory?: string | null;
+  filteredItems?: MenuEng[] | undefined;
+};
+
+type Action = {
+  type: "SET_CATEGORY" | "CLEAR_CATEGORY";
+  category?: string;
+};
+
+const initialState: State = {
+  selectedCategory: null,
+  filteredItems: [],
+};
+
+function reducer(state: State, action: Action): State {
+  switch (action.type) {
+    case "SET_CATEGORY":
+      return {
+        selectedCategory: action.category ?? null,
+        filteredItems: menuEng.filter(
+          (item) => item.category === action.category
+        ),
+      };
+    case "CLEAR_CATEGORY":
+      return initialState;
+    default:
+      return state;
+  }
+}
 
 export function Menu() {
-  const [mainCourse, setMainCourse] = useState<MenuEng[]>([]);
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const [removeFirstImg, setRemoveFirstImg] = useState(true);
+  const [firstImg, setFirstImg] = useState(true);
 
-  function handleShowImg() {
-    if (mainCourse.length > 0) {
-      setMainCourse([]);
+  function handleCategoryClick(category: string) {
+    setRemoveFirstImg((prev) => !prev);
+    setFirstImg((prev) => !prev);
+    if (state.selectedCategory === category) {
+      dispatch({ type: "CLEAR_CATEGORY" });
     } else {
-      const filteredMainCourse = menuEng.filter(
-        (item) => item.category === "Main Course"
-      );
-      setMainCourse(filteredMainCourse);
+      dispatch({ type: "SET_CATEGORY", category });
     }
   }
+
+  const categories = Array.from(new Set(menuEng.map((item) => item.category)));
 
   return (
     <>
       <ul>
-        <h1>Main Course</h1>
-        <img
-          onClick={handleShowImg}
-          src="https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1"
-          alt="Show Main Course"
-        />
-        {mainCourse.map((item) => (
-          <li key={item.id}>{item.name}</li>
+        {categories.map((category) => (
+          <div key={category}>
+            <h1 onClick={() => handleCategoryClick(category)}>{category}</h1>
+            {firstImg && (
+              <img
+                onClick={() => handleCategoryClick(category)}
+                src={
+                  (removeFirstImg &&
+                    menuEng.find((item) => item.category === category)?.img) ||
+                  ""
+                }
+                alt={`Show ${category}`}
+              />
+            )}
+            {state.selectedCategory === category &&
+              state.filteredItems?.map((item) => (
+                <>
+                  <li key={item.id}>{item.name}</li>
+                  <img src={item.img} alt={item.name} />
+                </>
+              ))}
+          </div>
         ))}
       </ul>
     </>

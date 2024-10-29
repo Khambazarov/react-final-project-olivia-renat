@@ -7,6 +7,7 @@ export type MenuEng = {
   availability: boolean;
   allergens: string[];
   img: string;
+  firstImg?: string;
 };
 
 export const menuEng: MenuEng[] = [
@@ -19,6 +20,8 @@ export const menuEng: MenuEng[] = [
     availability: true,
     allergens: ["gluten", "dairy"],
     img: "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
+    firstImg:
+      "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 2,
@@ -29,6 +32,8 @@ export const menuEng: MenuEng[] = [
     availability: true,
     allergens: ["dairy", "egg"],
     img: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
+    firstImg:
+      "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 3,
@@ -39,6 +44,8 @@ export const menuEng: MenuEng[] = [
     availability: true,
     allergens: ["gluten", "dairy", "nuts"],
     img: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
+    firstImg:
+      "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 4,
@@ -80,6 +87,8 @@ export const menuEng: MenuEng[] = [
     availability: true,
     allergens: ["nuts"],
     img: "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
+    firstImg:
+      "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 8,
@@ -109,7 +118,7 @@ export const menuEng: MenuEng[] = [
     description: "Creamy cheesecake with a graham cracker crust",
     availability: true,
     allergens: ["dairy", "gluten"],
-    img: "https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: "https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 11,
@@ -120,11 +129,13 @@ export const menuEng: MenuEng[] = [
     availability: true,
     allergens: [],
     img: "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
+    firstImg:
+      "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
   },
   {
     id: 12,
     name: "Chicken Wings",
-    category: "Appetizer",
+    category: "Side",
     price: "8_99",
     description: "Spicy chicken wings with ranch dipping sauce",
     availability: true,
