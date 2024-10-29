@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { 
+import {
   menuEng,
-  // MenuDe 
+  // MenuDe
 } from "../../API/menuEng";
 
 export function Menu() {
