@@ -18,11 +18,8 @@ export function Dishes() {
             <NavLink to={item.id} key={item.id}>
               <h2>
                 {item.name}
-                <span>{item.price}</span>
               </h2>
-              <p>{item.description}</p>
               <img src={item.img} alt={item.name} />
-              <p>{item.allergens}</p>
             </NavLink>
             {id === item.id && <Outlet />}
           </Fragment>
