@@ -4,7 +4,7 @@ export type MenuEng = {
   description: string;
   img: string;
   dishes: {
-    id: number;
+    id: string;
     name: string;
     price: string;
     description: string;
@@ -23,7 +23,7 @@ export const menuEng: MenuEng[] = [
     img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
     dishes: [
       {
-        id: 1,
+        id: "1",
         name: "Spaghetti Bolognese",
         price: "12_99",
         description: "Classic Italian pasta with rich bolognese sauce",
@@ -32,7 +32,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 4,
+        id: "4",
         name: "Margherita Pizza",
         price: "10_99",
         description: "Classic pizza with tomato sauce, mozzarella, and basil",
@@ -41,7 +41,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/19602378/pexels-photo-19602378/free-photo-of-sauerteigpizza-margherita-zeit.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 5,
+        id: "5",
         name: "Grilled Salmon",
         price: "14_99",
         description: "Perfectly grilled salmon served with lemon butter sauce",
@@ -50,7 +50,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/2374946/pexels-photo-2374946.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 6,
+        id: "6",
         name: "Vegan Burger",
         price: "11_99",
         description: "Plant-based patty with lettuce, tomato, and vegan mayo",
@@ -59,7 +59,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/6546033/pexels-photo-6546033.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 9,
+        id: "9",
         name: "Shrimp Tacos",
         price: "12_49",
         description: "Spicy shrimp tacos with fresh salsa and creamy sauce",
@@ -68,7 +68,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/27365309/pexels-photo-27365309/free-photo-of-mexikanisches-restaurant.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 13,
+        id: "13",
         name: "Beef Tacos",
         price: "10_49",
         description: "Soft shell tacos with seasoned beef, cheese, and lettuce",
@@ -77,7 +77,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/7613555/pexels-photo-7613555.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 14,
+        id: "14",
         name: "Penne Alfredo",
         price: "11_99",
         description: "Penne pasta in a creamy Alfredo sauce with Parmesan",
@@ -86,7 +86,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/29042359/pexels-photo-29042359/free-photo-of-kostliche-pesto-penne-nudeln-in-elegantem-ambiente.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 17,
+        id: "17",
         name: "Clam Chowder",
         price: "9_99",
         description: "Creamy clam chowder with potatoes and celery",
@@ -104,7 +104,7 @@ export const menuEng: MenuEng[] = [
     img: "https://images.pexels.com/photos/39826/chunks-wreak-menu-gastronomy-39826.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
     dishes: [
       {
-        id: 2,
+        id: "2",
         name: "Caesar Salad",
         price: "6_99",
         description: "Fresh romaine lettuce with Caesar dressing and croutons",
@@ -113,7 +113,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 8,
+        id: "8",
         name: "Garlic Bread",
         price: "3_99",
         description: "Toasted baguette with garlic butter and herbs",
@@ -122,7 +122,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/1460860/pexels-photo-1460860.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 15,
+        id: "15",
         name: "Greek Salad",
         price: "7_99",
         description: "Salad with cucumber, tomatoes, olives, and feta cheese",
@@ -131,7 +131,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 20,
+        id: "20",
         name: "Avocado Toast",
         price: "6_49",
         description: "Toasted bread with smashed avocado and a hint of lime",
@@ -149,7 +149,7 @@ export const menuEng: MenuEng[] = [
     img: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
     dishes: [
       {
-        id: 3,
+        id: "3",
         name: "Chocolate Cake",
         price: "5_99",
         description: "Rich and moist chocolate cake",
@@ -158,7 +158,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 10,
+        id: "10",
         name: "Cheesecake",
         price: "6_99",
         description: "Creamy cheesecake with a graham cracker crust",
@@ -168,7 +168,7 @@ export const menuEng: MenuEng[] = [
       },
 
       {
-        id: 16,
+        id: "16",
         name: "Fruit Bowl",
         price: "4_49",
         description: "Fresh seasonal fruits served in a bowl",
@@ -177,7 +177,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 18,
+        id: "18",
         name: "Vegan Chocolate Pudding",
         price: "5_49",
         description: "Rich and creamy vegan chocolate pudding",
@@ -195,7 +195,7 @@ export const menuEng: MenuEng[] = [
     img: "https://images.pexels.com/photos/1028637/pexels-photo-1028637.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
     dishes: [
       {
-        id: 7,
+        id: "7",
         name: "Mango Smoothie",
         price: "4_99",
         description:
@@ -205,7 +205,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 19,
+        id: "19",
         name: "Iced Latte",
         price: "4_49",
         description: "Chilled espresso with milk and ice",
@@ -215,7 +215,7 @@ export const menuEng: MenuEng[] = [
       },
 
       {
-        id: 21,
+        id: "21",
         name: "Mineral Water",
         price: "2_49",
         description: "Refreshing mineral water, still or sparkling",
@@ -224,7 +224,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 22,
+        id: "22",
         name: "Orange Juice",
         price: "3_49",
         description: "Freshly squeezed orange juice",
@@ -233,7 +233,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 23,
+        id: "23",
         name: "Green Tea",
         price: "2_99",
         description: "A hot cup of green tea, aromatic and soothing",
@@ -242,7 +242,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/3090274/pexels-photo-3090274.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 24,
+        id: "24",
         name: "Red Wine",
         price: "5_99",
         description: "Fine red wine, perfect with a main course",
@@ -251,7 +251,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/95960/pexels-photo-95960.jpeg?auto=compress&cs=tinysrgb&w420&h=250&dpr=1",
       },
       {
-        id: 25,
+        id: "25",
         name: "Beer",
         price: "4_49",
         description: "Chilled beer, freshly tapped",
@@ -269,7 +269,7 @@ export const menuEng: MenuEng[] = [
     img: "https://images.pexels.com/photos/5203696/pexels-photo-5203696.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
     dishes: [
       {
-        id: 11,
+        id: "11",
         name: "French Fries",
         price: "3_49",
         description: "Crispy golden french fries, lightly salted",
@@ -278,7 +278,7 @@ export const menuEng: MenuEng[] = [
         img: "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1",
       },
       {
-        id: 12,
+        id: "12",
         name: "Chicken Wings",
         price: "8_99",
         description: "Spicy chicken wings with ranch dipping sauce",

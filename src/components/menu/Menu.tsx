@@ -1,29 +1,25 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Fragment } from "react/jsx-runtime";
+import { NavLink, Outlet, useParams } from "react-router-dom";
 import {
   menuEng,
   // MenuDe
 } from "../../API/menuEng";
 
 export function Menu() {
-  function menuPath(path: string) {
-    return menuEng
-      .filter((item) => item.path === path)
-      .map(({ title, path, img }) => (
-        <NavLink to={path} key={path}>
-          <h2>{title}</h2>
-          <img src={img} alt={title} />
-        </NavLink>
-      ));
-  }
+  const { category } = useParams();
 
   return (
     <>
-      {menuPath("main-course")}
-      {menuPath("appetizer")}
-      {menuPath("dessert")}
-      {menuPath("beverage")}
-      {menuPath("side")}
-      <Outlet />
+      {menuEng.map(({ title, path, img, description }) => (
+        <Fragment key={path}>
+          <NavLink to={path}>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <img src={img} alt={title} />
+          </NavLink>
+          {category === path && <Outlet />}
+        </Fragment>
+      ))}
     </>
   );
 }
