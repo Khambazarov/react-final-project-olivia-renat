@@ -3,7 +3,7 @@ import { menuEng } from "../../API/menuEng";
 import { Fragment } from "react/jsx-runtime";
 
 export function Dishes() {
-  const { category, id } = useParams();
+  const { category, dishPath } = useParams();
 
   if (!category) {
     return <div>Invalid path</div>;
@@ -15,13 +15,13 @@ export function Dishes() {
         .find((item) => item.path === category)
         ?.dishes.map((item) => (
           <Fragment key={item.id}>
-            <NavLink to={item.id} key={item.id}>
+            <NavLink to={item.dishPath} key={item.id}>
               <h2>
                 {item.name}
               </h2>
               <img src={item.img} alt={item.name} />
             </NavLink>
-            {id === item.id && <Outlet />}
+            {dishPath === item.dishPath && <Outlet />}
           </Fragment>
         ))}
     </>

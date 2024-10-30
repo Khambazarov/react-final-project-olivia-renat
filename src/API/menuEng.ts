@@ -5,6 +5,7 @@ export type MenuEng = {
   img: string;
   dishes: {
     id: string;
+    dishPath: string;
     name: string;
     price: string;
     description: string;
@@ -25,6 +26,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "1",
         name: "Spaghetti Bolognese",
+        dishPath: "spaghetti-bolognese",
         price: "12_99",
         description: "Classic Italian pasta with rich bolognese sauce",
         availability: true,
@@ -34,6 +36,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "4",
         name: "Margherita Pizza",
+        dishPath: "margherita-pizza",
         price: "10_99",
         description: "Classic pizza with tomato sauce, mozzarella, and basil",
         availability: true,
@@ -43,6 +46,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "5",
         name: "Grilled Salmon",
+        dishPath: "grilled-salmon",
         price: "14_99",
         description: "Perfectly grilled salmon served with lemon butter sauce",
         availability: true,
@@ -52,6 +56,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "6",
         name: "Vegan Burger",
+        dishPath: "vegan-burger",
         price: "11_99",
         description: "Plant-based patty with lettuce, tomato, and vegan mayo",
         availability: true,
@@ -61,6 +66,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "9",
         name: "Shrimp Tacos",
+        dishPath: "shrimp-tacos",
         price: "12_49",
         description: "Spicy shrimp tacos with fresh salsa and creamy sauce",
         availability: true,
@@ -70,6 +76,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "13",
         name: "Beef Tacos",
+        dishPath: "beef-tacos",
         price: "10_49",
         description: "Soft shell tacos with seasoned beef, cheese, and lettuce",
         availability: true,
@@ -79,6 +86,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "14",
         name: "Penne Alfredo",
+        dishPath: "penne-alfredo",
         price: "11_99",
         description: "Penne pasta in a creamy Alfredo sauce with Parmesan",
         availability: true,
@@ -88,6 +96,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "17",
         name: "Clam Chowder",
+        dishPath: "clam-chowder",
         price: "9_99",
         description: "Creamy clam chowder with potatoes and celery",
         availability: true,
@@ -106,6 +115,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "2",
         name: "Caesar Salad",
+        dishPath: "ceasar-salad",
         price: "6_99",
         description: "Fresh romaine lettuce with Caesar dressing and croutons",
         availability: true,
@@ -115,6 +125,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "8",
         name: "Garlic Bread",
+        dishPath: "garlic-bread",
         price: "3_99",
         description: "Toasted baguette with garlic butter and herbs",
         availability: true,
@@ -124,6 +135,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "15",
         name: "Greek Salad",
+        dishPath: "greek-salad",
         price: "7_99",
         description: "Salad with cucumber, tomatoes, olives, and feta cheese",
         availability: true,
@@ -133,6 +145,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "20",
         name: "Avocado Toast",
+        dishPath: "avocado-toast",
         price: "6_49",
         description: "Toasted bread with smashed avocado and a hint of lime",
         availability: true,
@@ -151,6 +164,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "3",
         name: "Chocolate Cake",
+        dishPath: "chocolate-cake",
         price: "5_99",
         description: "Rich and moist chocolate cake",
         availability: true,
@@ -160,6 +174,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "10",
         name: "Cheesecake",
+        dishPath: "cheesecake",
         price: "6_99",
         description: "Creamy cheesecake with a graham cracker crust",
         availability: true,
@@ -170,6 +185,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "16",
         name: "Fruit Bowl",
+        dishPath: "fruit-bowl",
         price: "4_49",
         description: "Fresh seasonal fruits served in a bowl",
         availability: true,
@@ -179,6 +195,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "18",
         name: "Vegan Chocolate Pudding",
+        dishPath: "vegan-chocolate-pudding",
         price: "5_49",
         description: "Rich and creamy vegan chocolate pudding",
         availability: true,
@@ -197,6 +214,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "7",
         name: "Mango Smoothie",
+        dishPath: "mango-smoothie",
         price: "4_99",
         description:
           "Refreshing mango smoothie made with fresh mangoes and almond milk",
@@ -207,6 +225,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "19",
         name: "Iced Latte",
+        dishPath: "iced-latte",
         price: "4_49",
         description: "Chilled espresso with milk and ice",
         availability: true,
@@ -217,6 +236,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "21",
         name: "Mineral Water",
+        dishPath: "mineral-water",
         price: "2_49",
         description: "Refreshing mineral water, still or sparkling",
         availability: true,
@@ -226,6 +246,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "22",
         name: "Orange Juice",
+        dishPath: "orange-juice",
         price: "3_49",
         description: "Freshly squeezed orange juice",
         availability: true,
@@ -235,6 +256,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "23",
         name: "Green Tea",
+        dishPath: "green-tea",
         price: "2_99",
         description: "A hot cup of green tea, aromatic and soothing",
         availability: true,
@@ -244,6 +266,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "24",
         name: "Red Wine",
+        dishPath: "red-win",
         price: "5_99",
         description: "Fine red wine, perfect with a main course",
         availability: true,
@@ -253,6 +276,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "25",
         name: "Beer",
+        dishPath: "beer",
         price: "4_49",
         description: "Chilled beer, freshly tapped",
         availability: true,
@@ -271,6 +295,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "11",
         name: "French Fries",
+        dishPath: "french-fries",
         price: "3_49",
         description: "Crispy golden french fries, lightly salted",
         availability: true,
@@ -280,6 +305,7 @@ export const menuEng: MenuEng[] = [
       {
         id: "12",
         name: "Chicken Wings",
+        dishPath: "chicken-wings",
         price: "8_99",
         description: "Spicy chicken wings with ranch dipping sauce",
         availability: true,
