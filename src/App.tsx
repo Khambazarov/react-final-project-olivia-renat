@@ -8,6 +8,7 @@ import { Contact } from "./components/Contact";
 
 import { Dishes } from "./components/menu/Dishes";
 import { DishDetails } from "./components/menu/DishDetails";
+import { Cart } from "./components/Cart";
 
 function App() {
   return (
@@ -69,55 +70,6 @@ function App() {
         {/* catch all other not found pages */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </>
-  );
-}
-
-function Cart() {
-  const cartProduct = JSON.parse(localStorage.getItem("products") || "[]");
-
-  function totalProductPrice(price: string, count: string) {
-    const replaceUnderscoreToDot = price.replace("_", "");
-    return (Number(replaceUnderscoreToDot) * Number(count)) / 100;
-  }
-
-  function totalPrice() {
-    let price = 0;
-    cartProduct.map(
-      (product: { id: string; name: string; price: string; count: string }) => {
-        price += totalProductPrice(product.price, product.count);
-      }
-    );
-    console.log(price);
-    return price;
-  }
-
-  return (
-    <>
-      {cartProduct.length > 0 ? (
-        <>
-          {cartProduct.map(
-            (product: {
-              id: string;
-              name: string;
-              price: string;
-              count: string;
-            }) => (
-              <div key={product.id}>
-                <h3>{product.name}</h3>
-                <div>Product Price: {product.price.replace("_", ",")}€</div>
-                <div>Amount: {product.count}</div>
-                <div>
-                  Price: {totalProductPrice(product.price, product.count)}€
-                </div>
-              </div>
-            )
-          )}
-          <div>Total Price: {totalPrice()}€</div>
-        </>
-      ) : (
-        <div>Cart is empty</div>
-      )}
     </>
   );
 }
