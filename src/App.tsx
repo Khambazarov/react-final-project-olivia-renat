@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact";
 import { Dishes } from "./components/menu/Dishes";
 import { DishDetails } from "./components/menu/DishDetails";
 import { Cart } from "./components/Cart";
+import { Checkout } from "./components/Checkout";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path="find-us" element={<FindUs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<Checkout />} />
 
         {/* catch all other not found pages */}
         <Route path="*" element={<Navigate to="/" />} />

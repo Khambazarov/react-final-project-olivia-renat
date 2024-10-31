@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { NavLink } from "react-router-dom";
 
 type Product = {
   id: string;
@@ -45,7 +46,7 @@ export function Cart() {
 
   function totalProductPrice(price: string, count: number) {
     const replaceUnderscoreToDot = price.replace("_", "");
-    return Number(replaceUnderscoreToDot) * count / 100;
+    return (Number(replaceUnderscoreToDot) * count) / 100;
   }
 
   function totalPrice() {
@@ -92,6 +93,9 @@ export function Cart() {
             </div>
           ))}
           <div>Total Price: {totalPrice().toFixed(2)}€</div>
+          <NavLink to="../checkout">
+            <button>Checkout</button>
+          </NavLink>
         </>
       ) : (
         <div>Cart is empty</div>
