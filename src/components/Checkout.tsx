@@ -10,6 +10,13 @@ type Product = {
 
 export function Checkout() {
   const [cartProducts, setCartProducts] = useState<Product[]>([]);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    address: "",
+    phone: "",
+    message: "",
+  });
   const [state, handleSubmit] = useForm("xdoqqkll");
 
   useEffect(() => {
@@ -28,43 +35,36 @@ export function Checkout() {
     }, 0);
   }
 
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Fügen Sie die Bestelldaten als verstecktes Feld hinzu
-    const form = e.target as HTMLFormElement;
-    const orderDetails = cartProducts
-      .map(
-        (product) =>
-          `${product.name} (x${product.count}): ${totalProductPrice(
-            product.price,
-            product.count
-          ).toFixed(2)}€`
-      )
-      .join(", ");
-    const orderDetailsInput = document.createElement("input");
-    orderDetailsInput.type = "hidden";
-    orderDetailsInput.name = "orderDetails";
-    orderDetailsInput.value = orderDetails;
-    form.appendChild(orderDetailsInput);
-
-    // Fügen Sie den Gesamtpreis als verstecktes Feld hinzu
-    const totalPriceInput = document.createElement("input");
-    totalPriceInput.type = "hidden";
-    totalPriceInput.name = "totalPrice";
-    totalPriceInput.value = totalPrice().toFixed(2) + "€";
-    form.appendChild(totalPriceInput);
-
     handleSubmit(e);
-
     localStorage.setItem("products", "[]");
-    const storedProducts = JSON.parse(localStorage.getItem("products") || "[]");
-    setCartProducts(storedProducts);
+    setCartProducts([]);
   };
 
   if (state.succeeded) {
     return <p>Thanks for your order!</p>;
   }
+  // Fügen Sie die Bestelldaten als verstecktes Feld hinzu
+  const orderDetails = cartProducts
+    .map(
+      (product) =>
+        `${product.name} (x${product.count}): ${totalProductPrice(
+          product.price,
+          product.count
+        ).toFixed(2)}€`
+    )
+    .join(", ");
 
   return (
     <>
@@ -92,21 +92,61 @@ export function Checkout() {
 
       <form onSubmit={handleFormSubmit}>
         <label htmlFor="name">Name</label>
-        <input id="name" type="text" name="name" required />
+        <input
+          id="name"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
         <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" required />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <label htmlFor="address">Address</label>
-        <input id="address" type="text" name="address" required />
+        <input
+          id="address"
+          type="text"
+          name="address"
+          value={formData.address}
+          onChange={handleChange}
+          required
+        />
         <label htmlFor="phone">Phone</label>
-        <input id="phone" type="tel" name="phone" required />
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          required
+        />
         <ValidationError prefix="Phone" field="phone" errors={state.errors} />
         <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" />
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+        />
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
+        />
+        <input type="hidden" name="_replyto" value={formData.email} />
+        <input type="hidden" name="orderDetails" value={orderDetails} />
+        <input
+          type="hidden"
+          name="totalPrice"
+          value={totalPrice().toFixed(2) + "€"}
         />
         <button type="submit" disabled={state.submitting}>
           Submit
