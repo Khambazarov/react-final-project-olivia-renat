@@ -29,6 +29,27 @@ function App() {
           <li>
             <NavLink to="contact">Contact</NavLink>
           </li>
+          <li>
+            <NavLink to="cart">
+              Cart
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-shopping-cart"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+              </svg>
+            </NavLink>
+          </li>
         </ul>
         <Outlet />
       </nav>
@@ -43,10 +64,60 @@ function App() {
         <Route path="about-us" element={<AboutUs />} />
         <Route path="find-us" element={<FindUs />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="cart" element={<Cart />} />
 
         {/* catch all other not found pages */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+    </>
+  );
+}
+
+function Cart() {
+  const cartProduct = JSON.parse(localStorage.getItem("products") || "[]");
+
+  function totalProductPrice(price: string, count: string) {
+    const replaceUnderscoreToDot = price.replace("_", "");
+    return (Number(replaceUnderscoreToDot) * Number(count)) / 100;
+  }
+
+  function totalPrice() {
+    let price = 0;
+    cartProduct.map(
+      (product: { id: string; name: string; price: string; count: string }) => {
+        price += totalProductPrice(product.price, product.count);
+      }
+    );
+    console.log(price);
+    return price;
+  }
+
+  return (
+    <>
+      {cartProduct.length > 0 ? (
+        <>
+          {cartProduct.map(
+            (product: {
+              id: string;
+              name: string;
+              price: string;
+              count: string;
+            }) => (
+              <div key={product.id}>
+                <h3>{product.name}</h3>
+                <div>Product Price: {product.price.replace("_", ",")}€</div>
+                <div>Amount: {product.count}</div>
+                <div>
+                  Price: {totalProductPrice(product.price, product.count)}€
+                </div>
+              </div>
+            )
+          )}
+          <div>Total Price: {totalPrice()}€</div>
+        </>
+      ) : (
+        <div>Cart is empty</div>
+      )}
     </>
   );
 }
