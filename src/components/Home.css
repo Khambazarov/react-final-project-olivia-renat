@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  text-wrap: balance;
+  margin: 1rem;
+}
+
+p {
+  margin: 1rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+img {
+  background-position: center;
+  background-size: contain;
+}
+
+section {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}

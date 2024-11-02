@@ -1,5 +1,8 @@
+import "./Checkout.css";
+
 import { useForm, ValidationError } from "@formspree/react";
 import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
 
 type Product = {
   id: string;
@@ -69,28 +72,33 @@ export function Checkout() {
   return (
     <>
       <h2>Warenkorb</h2>
-      <div>
+      <div className="container">
         {cartProducts.length > 0 ? (
           <>
             {cartProducts.map((product) => (
-              <div key={product.id}>
+              <div className="product" key={product.id}>
                 <h3>{product.name}</h3>
                 <div>Product Price: {product.price.replace("_", ",")}€</div>
                 <div>Amount: {product.count}</div>
-                <div>
-                  Price:
-                  {totalProductPrice(product.price, product.count).toFixed(2)}€
+                <div className="product-price">
+                  Price: {" "}
+                  {totalProductPrice(product.price, product.count)
+                    .toFixed(2)
+                    .replace(".", ",")}
+                  €
                 </div>
               </div>
             ))}
-            <div>Total Price: {totalPrice().toFixed(2)}€</div>
+            <div className="total-price">
+              Total Price: {totalPrice().toFixed(2).replace(".", ",")}€
+            </div>
           </>
         ) : (
           <div>Cart is empty</div>
         )}
       </div>
 
-      <form onSubmit={handleFormSubmit}>
+      <form className="form" onSubmit={handleFormSubmit}>
         <label htmlFor="name">Name</label>
         <input
           id="name"
@@ -148,9 +156,7 @@ export function Checkout() {
           name="totalPrice"
           value={totalPrice().toFixed(2) + "€"}
         />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
+        <Button />
       </form>
     </>
   );

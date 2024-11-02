@@ -59,9 +59,9 @@ export const DishDetails = () => {
       {dish && (
         <Fragment key={dishPath}>
           <NavLink to="../">
-            <span>{dish?.price}</span>
+            <span>{(dish.price).replace("_", ",")}€</span>
             <p>{dish?.description}</p>
-            <p>{dish?.allergens.join(", ")}</p>
+            <p>Allergens: {dish?.allergens.join(", ")}</p>
             <h2>close</h2>
             {dishPath === dish?.dishPath && <Outlet />}
           </NavLink>

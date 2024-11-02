@@ -11,11 +11,18 @@ import { DishDetails } from "./components/menu/DishDetails";
 import { Cart } from "./components/Cart";
 import { Checkout } from "./components/Checkout";
 
+import "./App.css";
+
 function App() {
   return (
     <>
       <nav>
-        <ul>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon"></span>
+        </label>
+
+        <ul className="menu">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>

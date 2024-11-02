@@ -1,25 +1,23 @@
 export function AboutUs() {
   return (
     <div>
-      <h1>Über uns</h1>
-      <p>
-        Wir sind ein familiengeführtes Restaurant, das sich auf traditionelle
-        Küche spezialisiert hat.
-      </p>
-      <section>
-        <h2>Unsere Geschichte</h2>
-        <p>
-          Seit 1990 bieten wir unseren Gästen die besten Gerichte aus der
-          Region.
-        </p>
-      </section>
-      <section>
-        <h2>Unser Team</h2>
-        <p>
-          Unser Team besteht aus erfahrenen Köchen und freundlichem
-          Servicepersonal.
-        </p>
-      </section>
-    </div>
+  <h1>About Us</h1>
+  <p>
+    We are a family-run restaurant specializing in traditional cuisine.
+  </p>
+  <section>
+    <h2>Our History</h2>
+    <p>
+      Since 1990, we have been offering our guests the best dishes from the region.
+    </p>
+  </section>
+  <section>
+    <h2>Our Team</h2>
+    <p>
+      Our team consists of experienced chefs and friendly service staff.
+    </p>
+  </section>
+</div>
+
   );
 }

@@ -1,5 +1,8 @@
+import "./Cart.css"
+
 import { useReducer } from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "./Button";
 
 type Product = {
   id: string;
@@ -60,12 +63,12 @@ export function Cart() {
       {state.cartProduct.length > 0 ? (
         <>
           {state.cartProduct.map((product) => (
-            <div key={product.id}>
+            <div className="container" key={product.id}>
               <h3>{product.name}</h3>
               <div>Product Price: {product.price.replace("_", ",")}€</div>
               <div>
-                Amount:
                 <button
+                className="count-btn"
                   onClick={() =>
                     dispatch({ type: "decrement", id: product.id })
                   }
@@ -74,6 +77,7 @@ export function Cart() {
                 </button>
                 {product.count}
                 <button
+                className="count-btn"
                   onClick={() =>
                     dispatch({ type: "increment", id: product.id })
                   }
@@ -82,6 +86,7 @@ export function Cart() {
                 </button>
               </div>
               <button
+              className="delete"
                 onClick={() => dispatch({ type: "delete", id: product.id })}
               >
                 Delete
@@ -94,7 +99,7 @@ export function Cart() {
           ))}
           <div>Total Price: {totalPrice().toFixed(2)}€</div>
           <NavLink to="../checkout">
-            <button>Checkout</button>
+            <Button />
           </NavLink>
         </>
       ) : (

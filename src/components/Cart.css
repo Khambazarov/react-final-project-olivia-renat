@@ -1,0 +1,42 @@
+.container {
+  border: 2px solid gray;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.count-btn {
+  margin-inline: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.delete {
+  width: 5.5rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding-block: 0.125rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: auto;
+  border-radius:.5rem ;
+}
+
+div{
+  text-align: center;
+}
+
+.styled-btn{
+  margin-top:1rem
+}

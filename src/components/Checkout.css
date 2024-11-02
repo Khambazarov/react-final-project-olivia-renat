@@ -1,0 +1,50 @@
+.container {
+  border: 2px solid gray;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product {
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+div {
+  text-align: center;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+}
+
+.total-price {
+  font-size: 1.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+
+  label {
+    margin-top: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.styled-btn {
+  margin-top: 1rem;
+}
