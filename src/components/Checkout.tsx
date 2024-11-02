@@ -81,7 +81,7 @@ export function Checkout() {
                 <div>Product Price: {product.price.replace("_", ",")}€</div>
                 <div>Amount: {product.count}</div>
                 <div className="product-price">
-                  Price: {" "}
+                  Price:{" "}
                   {totalProductPrice(product.price, product.count)
                     .toFixed(2)
                     .replace(".", ",")}
@@ -90,7 +90,7 @@ export function Checkout() {
               </div>
             ))}
             <div className="total-price">
-              Total Price: {totalPrice().toFixed(2).replace(".", ",")}€
+              Total Price: {totalPrice().toFixed(2).replace(".{", ",")}€
             </div>
           </>
         ) : (
