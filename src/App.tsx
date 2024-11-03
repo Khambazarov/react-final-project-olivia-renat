@@ -1,15 +1,25 @@
-import { NavLink, Routes, Route, Outlet, Navigate } from "react-router-dom";
+import {
+  NavLink,
+  Routes,
+  Route,
+  Outlet,
+  // , Navigate
+} from "react-router-dom";
 
 import { Home } from "./components/Home";
-import { Menu } from "./components/menu/Menu";
 import { AboutUs } from "./components/AboutUs";
 import { FindUs } from "./components/FindUs";
 import { Contact } from "./components/Contact";
+import { PageNotFound } from "./components/PageNotFound";
 
-import { Dishes } from "./components/menu/Dishes";
-import { DishDetails } from "./components/menu/DishDetails";
 import { Cart } from "./components/Cart";
 import { Checkout } from "./components/Checkout";
+
+import { Menu } from "./components/menu/Menu";
+import { Dishes } from "./components/menu/Dishes";
+import { DishDetails } from "./components/menu/DishDetails";
+
+import "./App.css";
 
 import "./App.css";
 
@@ -77,7 +87,8 @@ function App() {
         <Route path="checkout" element={<Checkout />} />
 
         {/* catch all other not found pages */}
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );
