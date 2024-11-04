@@ -1,11 +1,34 @@
 # Webshop
 
-#### used tecnologies
+## Used Technologies
 
+- React
+- React Router
 - useQuery
 - useParams
 - localStorage
-- build own API ( English | German)
+- Formspree
+- Own API (English | German)
+
+## Libraries
+
+- `react`: ^18.3.1
+- `react-dom`: ^18.3.1
+- `react-router-dom`: ^6.27.0
+- `@formspree/react`: ^2.5.1
+
+## Features
+
+- Multilingual support (English and German)
+- User login and registration
+- Shopping cart with local storage functions
+- Contact form via Formspree
+- Dynamic menu display based on categories and dishes
+- Price calculation and display in the cart and checkout
+
+## Example Menus
+
+### English Menu
 
 ```js
 const menuEng = [
@@ -18,17 +41,12 @@ const menuEng = [
     availability: true,
     allergens: ["gluten", "dairy"],
   },
-  {
-    id: "2",
-    name: "Caesar Salad",
-    category: "Appetizer",
-    price: 6_99,
-    description: "Fresh romaine lettuce with Caesar dressing and croutons",
-    availability: true,
-    allergens: ["dairy", "egg"],
-  },
 ];
+```
 
+### German Menu
+
+```js
 const menuDe = [
   {
     id: 1,
@@ -40,23 +58,27 @@ const menuDe = [
     availability: true,
     allergens: ["gluten", "milchprodukte"],
   },
-  {
-    id: 2,
-    name: "Caesar Salat",
-    category: "Vorspeise",
-    price: 6_99,
-    description: "Frischer Römersalat mit Caesar-Dressing und Croutons",
-    availability: true,
-    allergens: ["milchprodukte", "ei"],
-  },
 ];
 ```
 
-#### user options
+## User Options
 
-- Home | Menu | About Us | Find Us | Contact ( formspree )
-- Menu => login | registration
-  - cart ( formspree )
-- logout
+- Home
+- Menu
+- About Us
+- Find Us
+- Contact (Formspree)
+- Menu => Login | Registrierung
+  - Cart (Formspree)
+- Logout
 
----
+## Installation and Usage
+
+##### Clone repository:
+
+```sh
+git clone https://github.com/fbw-24-d02b/react-final-project-olivia-renat
+cd react-final-project-olivia-renat
+npm install
+npm run dev
+```
