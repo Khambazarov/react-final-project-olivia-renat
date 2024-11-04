@@ -78,7 +78,16 @@ const menuDe = [
 
 ```sh
 git clone https://github.com/fbw-24-d02b/react-final-project-olivia-renat
+```
+
+```sh
 cd react-final-project-olivia-renat
+```
+
+```sh
 npm install
+```
+
+```sh
 npm run dev
 ```
