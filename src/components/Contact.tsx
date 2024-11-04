@@ -11,11 +11,8 @@ export function Contact() {
 
   return (
     <div>
-     <h1>Contact</h1>
-<p>You can reach us at the following number: 01234 567890</p>
+     <h3>Contact</h3>
 <section>
-  <h2>Contact Form</h2>
-
         <form onSubmit={handleSubmit}>
           <div className="form">
             <label htmlFor="name">Name:</label>

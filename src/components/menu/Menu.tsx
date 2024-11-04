@@ -19,7 +19,7 @@ export function Menu() {
             <NavLink to={path}>
               <h2>{title}</h2>
               <p>{description}</p>
-              <img src={img} alt={title} />
+              <img className="category-img" src={img} alt={title} />
             </NavLink>
           </div>
           {category === path && <Outlet />}

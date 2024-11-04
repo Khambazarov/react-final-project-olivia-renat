@@ -26,7 +26,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav>
+      <nav>                                          
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
@@ -40,21 +40,21 @@ function App() {
             <NavLink to="menu">Menu</NavLink>
           </li>
           <li>
-            <NavLink to="about-us">About Us</NavLink>
+            <NavLink to="about-us">About</NavLink>
           </li>
           <li>
-            <NavLink to="find-us">FindUs</NavLink>
+            <NavLink to="find-us">Find</NavLink>
           </li>
           <li>
             <NavLink to="contact">Contact</NavLink>
           </li>
-          <li>
+          <li className="cart">
             <NavLink to="cart">
               Cart
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"

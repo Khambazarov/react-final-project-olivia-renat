@@ -21,7 +21,7 @@ export const menuEng: MenuEng[] = [
     path: "main-course",
     description:
       "A selection of delicious main dishes prepared with fresh ingredients and love. Our offerings range from hearty meat and fish options to vegetarian and vegan creations that delight every palate.",
-    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+    img: "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
     dishes: [
       {
         id: "1",
@@ -31,7 +31,7 @@ export const menuEng: MenuEng[] = [
         description: "Classic Italian pasta with rich bolognese sauce",
         availability: true,
         allergens: ["gluten", "dairy"],
-        img: "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/28575312/pexels-photo-28575312/free-photo-of-traditionelle-spaghetti-bolognese-mit-frischen-zutaten.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "4",
@@ -41,7 +41,7 @@ export const menuEng: MenuEng[] = [
         description: "Classic pizza with tomato sauce, mozzarella, and basil",
         availability: true,
         allergens: ["gluten", "dairy"],
-        img: "https://images.pexels.com/photos/19602378/pexels-photo-19602378/free-photo-of-sauerteigpizza-margherita-zeit.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/19602378/pexels-photo-19602378/free-photo-of-sauerteigpizza-margherita-zeit.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "5",
@@ -51,7 +51,7 @@ export const menuEng: MenuEng[] = [
         description: "Perfectly grilled salmon served with lemon butter sauce",
         availability: true,
         allergens: ["fish"],
-        img: "https://images.pexels.com/photos/2374946/pexels-photo-2374946.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/2374946/pexels-photo-2374946.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "6",
@@ -61,7 +61,7 @@ export const menuEng: MenuEng[] = [
         description: "Plant-based patty with lettuce, tomato, and vegan mayo",
         availability: true,
         allergens: ["gluten"],
-        img: "https://images.pexels.com/photos/6546033/pexels-photo-6546033.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/6546033/pexels-photo-6546033.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "9",
@@ -71,7 +71,7 @@ export const menuEng: MenuEng[] = [
         description: "Spicy shrimp tacos with fresh salsa and creamy sauce",
         availability: true,
         allergens: ["shellfish", "gluten"],
-        img: "https://images.pexels.com/photos/27365309/pexels-photo-27365309/free-photo-of-mexikanisches-restaurant.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/27365309/pexels-photo-27365309/free-photo-of-mexikanisches-restaurant.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "13",
@@ -81,7 +81,7 @@ export const menuEng: MenuEng[] = [
         description: "Soft shell tacos with seasoned beef, cheese, and lettuce",
         availability: true,
         allergens: ["gluten", "dairy"],
-        img: "https://images.pexels.com/photos/7613555/pexels-photo-7613555.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/7613555/pexels-photo-7613555.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "14",
@@ -91,7 +91,7 @@ export const menuEng: MenuEng[] = [
         description: "Penne pasta in a creamy Alfredo sauce with Parmesan",
         availability: true,
         allergens: ["gluten", "dairy"],
-        img: "https://images.pexels.com/photos/29042359/pexels-photo-29042359/free-photo-of-kostliche-pesto-penne-nudeln-in-elegantem-ambiente.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/29042359/pexels-photo-29042359/free-photo-of-kostliche-pesto-penne-nudeln-in-elegantem-ambiente.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "17",
@@ -101,7 +101,7 @@ export const menuEng: MenuEng[] = [
         description: "Creamy clam chowder with potatoes and celery",
         availability: true,
         allergens: ["shellfish", "dairy"],
-        img: "https://images.pexels.com/photos/16357831/pexels-photo-16357831/free-photo-of-lebensmittel-essen-mahlzeit-schussel.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/16357831/pexels-photo-16357831/free-photo-of-lebensmittel-essen-mahlzeit-schussel.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
     ],
   },
@@ -110,7 +110,7 @@ export const menuEng: MenuEng[] = [
     path: "appetizer",
     description:
       "A delightful assortment of appetizers that awaken your taste buds. From crispy bites to refreshing salads, each dish is crafted with high-quality ingredients, perfect for sharing or enjoying on your own.",
-    img: "https://images.pexels.com/photos/39826/chunks-wreak-menu-gastronomy-39826.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+    img: "https://images.pexels.com/photos/39826/chunks-wreak-menu-gastronomy-39826.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
     dishes: [
       {
         id: "2",
@@ -120,7 +120,7 @@ export const menuEng: MenuEng[] = [
         description: "Fresh romaine lettuce with Caesar dressing and croutons",
         availability: true,
         allergens: ["dairy", "egg"],
-        img: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "8",
@@ -130,7 +130,7 @@ export const menuEng: MenuEng[] = [
         description: "Toasted baguette with garlic butter and herbs",
         availability: true,
         allergens: ["gluten", "dairy"],
-        img: "https://images.pexels.com/photos/1460860/pexels-photo-1460860.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1460860/pexels-photo-1460860.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "15",
@@ -140,7 +140,7 @@ export const menuEng: MenuEng[] = [
         description: "Salad with cucumber, tomatoes, olives, and feta cheese",
         availability: true,
         allergens: ["dairy"],
-        img: "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "20",
@@ -150,7 +150,7 @@ export const menuEng: MenuEng[] = [
         description: "Toasted bread with smashed avocado and a hint of lime",
         availability: true,
         allergens: ["gluten"],
-        img: "https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
     ],
   },
@@ -159,7 +159,7 @@ export const menuEng: MenuEng[] = [
     path: "dessert",
     description:
       "Indulge in our decadent desserts that promise to satisfy your sweet tooth. From rich chocolate cakes to light fruit tarts, each creation is made with love and the finest ingredients, ensuring a delightful finish to your meal.",
-    img: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+    img: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
     dishes: [
       {
         id: "3",
@@ -169,7 +169,7 @@ export const menuEng: MenuEng[] = [
         description: "Rich and moist chocolate cake",
         availability: true,
         allergens: ["gluten", "dairy", "nuts"],
-        img: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "10",
@@ -179,7 +179,7 @@ export const menuEng: MenuEng[] = [
         description: "Creamy cheesecake with a graham cracker crust",
         availability: true,
         allergens: ["dairy", "gluten"],
-        img: "https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
 
       {
@@ -190,7 +190,7 @@ export const menuEng: MenuEng[] = [
         description: "Fresh seasonal fruits served in a bowl",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "18",
@@ -200,7 +200,7 @@ export const menuEng: MenuEng[] = [
         description: "Rich and creamy vegan chocolate pudding",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
     ],
   },
@@ -209,7 +209,7 @@ export const menuEng: MenuEng[] = [
     path: "beverage",
     description:
       "A refreshing selection of beverages to complement your meal. From revitalizing smoothies and freshly squeezed juices to exquisite wines and craft beers, each drink is designed to enhance your dining experience.",
-    img: "https://images.pexels.com/photos/1028637/pexels-photo-1028637.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+    img: "https://images.pexels.com/photos/1028637/pexels-photo-1028637.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
     dishes: [
       {
         id: "7",
@@ -220,7 +220,7 @@ export const menuEng: MenuEng[] = [
           "Refreshing mango smoothie made with fresh mangoes and almond milk",
         availability: true,
         allergens: ["nuts"],
-        img: "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "19",
@@ -230,7 +230,7 @@ export const menuEng: MenuEng[] = [
         description: "Chilled espresso with milk and ice",
         availability: true,
         allergens: ["dairy"],
-        img: "https://images.pexels.com/photos/29095101/pexels-photo-29095101/free-photo-of-eiskaffee-auf-holztisch-im-cafe-ambiente.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/29095101/pexels-photo-29095101/free-photo-of-eiskaffee-auf-holztisch-im-cafe-ambiente.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
 
       {
@@ -241,7 +241,7 @@ export const menuEng: MenuEng[] = [
         description: "Refreshing mineral water, still or sparkling",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "22",
@@ -251,7 +251,7 @@ export const menuEng: MenuEng[] = [
         description: "Freshly squeezed orange juice",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "23",
@@ -261,7 +261,7 @@ export const menuEng: MenuEng[] = [
         description: "A hot cup of green tea, aromatic and soothing",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/3090274/pexels-photo-3090274.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/3090274/pexels-photo-3090274.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "24",
@@ -271,7 +271,7 @@ export const menuEng: MenuEng[] = [
         description: "Fine red wine, perfect with a main course",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/95960/pexels-photo-95960.jpeg?auto=compress&cs=tinysrgb&w420&h=250&dpr=1",
+        img: "https://images.pexels.com/photos/95960/pexels-photo-95960.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "25",
@@ -281,7 +281,7 @@ export const menuEng: MenuEng[] = [
         description: "Chilled beer, freshly tapped",
         availability: true,
         allergens: ["gluten"],
-        img: "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
     ],
   },
@@ -290,7 +290,7 @@ export const menuEng: MenuEng[] = [
     path: "side",
     description:
       "Enhance your meal with our delightful selection of side dishes. Each option is crafted to complement your main course, featuring fresh vegetables, flavorful grains, and classic accompaniments that add texture and taste to your dining experience.",
-    img: "https://images.pexels.com/photos/5203696/pexels-photo-5203696.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+    img: "https://images.pexels.com/photos/5203696/pexels-photo-5203696.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
     dishes: [
       {
         id: "11",
@@ -300,7 +300,7 @@ export const menuEng: MenuEng[] = [
         description: "Crispy golden french fries, lightly salted",
         availability: true,
         allergens: [],
-        img: "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/1586942/pexels-photo-1586942.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
       {
         id: "12",
@@ -310,7 +310,7 @@ export const menuEng: MenuEng[] = [
         description: "Spicy chicken wings with ranch dipping sauce",
         availability: true,
         allergens: ["dairy"],
-        img: "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=1",
+        img: "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=320&h=250&dpr=1",
       },
     ],
   },

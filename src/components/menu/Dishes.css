@@ -1,0 +1,23 @@
+.dishes-img {
+  width: 320px;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .dishes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .dish-item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1020px) {
+  .dishes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

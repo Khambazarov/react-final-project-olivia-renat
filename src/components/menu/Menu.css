@@ -15,3 +15,10 @@ h2:hover {
 p {
   font-style: italic;
 }
+
+.category-img {
+  width: clamp(320px, 30%, 500px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

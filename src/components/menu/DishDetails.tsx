@@ -3,6 +3,8 @@ import { menuEng } from "../../API/menuEng";
 import { Fragment } from "react/jsx-runtime";
 import { useState, useEffect } from "react";
 
+import "./DishDetails.css";
+
 const initialState: {
   id: string;
   name: string;
@@ -39,7 +41,7 @@ export const DishDetails = () => {
     );
 
     if (productIndex > -1) {
-      storedProducts[productIndex].count += 1;
+      storedProducts[productIndex].count = 1;
     } else {
       const newProduct = {
         id: dish.id,
@@ -59,15 +61,21 @@ export const DishDetails = () => {
       {dish && (
         <Fragment key={dishPath}>
           <NavLink to="../">
-            <span>{(dish.price).replace("_", ",")}€</span>
+            <span>{dish.price.replace("_", ",")}€</span>
             <p>{dish?.description}</p>
             <p>Allergens: {dish?.allergens.join(", ")}</p>
             <h2>close</h2>
             {dishPath === dish?.dishPath && <Outlet />}
           </NavLink>
-          <button onClick={handleAddProduct}>
-            ADD: {existingProductCount}
-          </button>
+          {existingProductCount === 1 ? (
+            <button disabled className="dishes-details-btn">
+              Added
+            </button>
+          ) : (
+            <button className="dishes-details-btn" onClick={handleAddProduct}>
+              Add to Cart
+            </button>
+          )}
         </Fragment>
       )}
     </>
