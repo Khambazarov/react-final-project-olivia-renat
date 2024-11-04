@@ -22,3 +22,17 @@ p {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.scroll-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+  }
+
+@media (min-width: 768px) {
+  
+  .scroll-top {
+    top: 50%;
+    right: 5rem;
+  }
+}

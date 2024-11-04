@@ -24,7 +24,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav>                                          
+      <nav>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>

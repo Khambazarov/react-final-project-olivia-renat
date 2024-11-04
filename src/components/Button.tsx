@@ -2,13 +2,17 @@ import "./Button.css"
 
 import { useForm } from "@formspree/react";
 
-export const Button = () => {
+type ButtonProps = {
+  text: string;
+}
+
+export const Button = ({ text }: ButtonProps) => {
   const [state] = useForm("xdoqqkll");
-  
+
   return (
     <>
       <button className="styled-btn" type="submit" disabled={state.submitting}>
-        Submit
+        {text}
         <div className="icon-1">
           <svg
             xmlnsXlink="http://www.w3.org/1999/xlink"

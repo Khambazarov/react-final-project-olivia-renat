@@ -36,7 +36,7 @@ export function Contact() {
               errors={state.errors}
             />
           </div>
-          <Button />
+          <Button text="Submit" />
         </form>
       </section>
     </div>

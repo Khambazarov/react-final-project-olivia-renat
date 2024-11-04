@@ -4,6 +4,10 @@
   object-fit: cover;
 }
 
+.toggle-btn {
+  padding: 0.5rem 1rem;
+}
+
 @media (min-width: 768px) {
   .dishes-container {
     display: grid;

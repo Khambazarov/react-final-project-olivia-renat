@@ -156,7 +156,7 @@ export function Checkout() {
           name="totalPrice"
           value={totalPrice().toFixed(2) + "€"}
         />
-        <Button />
+        <Button text="Order" />
       </form>
     </>
   );

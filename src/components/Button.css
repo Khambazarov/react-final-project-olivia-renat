@@ -81,7 +81,7 @@
 }
 
 .styled-btn .icon-2 {
-  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  animation: slay-2 3s cubic-bezier(0calc(90% - 140px).52, 0, 0.58, 1) 1s infinite;
   transform: rotate(0);
 }
 

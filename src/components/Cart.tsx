@@ -99,7 +99,7 @@ export function Cart() {
           ))}
           <div>Total Price: {totalPrice().toFixed(2)}€</div>
           <NavLink to="../checkout">
-            <Button />
+            <Button text="Checkout" />
           </NavLink>
         </>
       ) : (

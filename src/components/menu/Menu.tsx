@@ -6,12 +6,16 @@ import {
   menuEng,
   // MenuDe
 } from "../../API/menuEng";
+import { Button } from "../Button";
 
 export function Menu() {
   const { category } = useParams();
 
   return (
     <div>
+      <a className="scroll-top" href="#">
+        <Button text="To Top" />
+      </a>
       <h1>Categories</h1>
       {menuEng.map(({ title, path, img, description }) => (
         <Fragment key={path}>
