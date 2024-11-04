@@ -18,9 +18,17 @@ export function Dishes() {
         ?.dishes.map((item) => (
           <Fragment key={item.id}>
             <div className="dish-item">
-              <NavLink to={item.dishPath} key={item.id}>
+              <NavLink
+                to={
+                  item.dishPath === dishPath
+                    ? `/menu/${category}`
+                    : item.dishPath
+                }
+                key={item.id}
+              >
                 <h2>{item.name}</h2>
                 <img className="dishes-img" src={item.img} alt={item.name} />
+                <button className="toggle-btn">{item.dishPath !== dishPath ? "Open" : "Close"}</button>
               </NavLink>
               {dishPath === item.dishPath && <Outlet />}
             </div>

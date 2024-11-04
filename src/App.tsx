@@ -21,8 +21,6 @@ import { DishDetails } from "./components/menu/DishDetails";
 
 import "./App.css";
 
-import "./App.css";
-
 function App() {
   return (
     <>

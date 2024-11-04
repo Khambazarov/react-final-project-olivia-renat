@@ -16,7 +16,7 @@ export function Menu() {
       {menuEng.map(({ title, path, img, description }) => (
         <Fragment key={path}>
           <div className="categories">
-            <NavLink to={path}>
+            <NavLink to={path === category ? "/menu" : path}>
               <h2>{title}</h2>
               <p>{description}</p>
               <img className="category-img" src={img} alt={title} />
